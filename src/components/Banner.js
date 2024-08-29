@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import Spline from '@splinetool/react-spline';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -54,8 +56,8 @@ export const Banner = () => {
             <p> laallallallala</p>
             <button onClick={() => console.log('connect')}> Let's Connect <ArrowRightCircle size={25} /></button>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header img" />
+          <Col xs={12} md={6} xl={5}  className="spline-container">
+          <Spline scene="https://prod.spline.design/Co8Y92So6OMdyjLn/scene.splinecode" />
           </Col>
         </Row>
       </Container>
